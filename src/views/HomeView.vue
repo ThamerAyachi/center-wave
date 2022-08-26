@@ -139,7 +139,7 @@
             </div>
           </div>
           <!-- contact -->
-          <div class="bg-darked p-3">
+          <div class="bg-darked p-3" id="contact">
             <div class="w-full text-center text-primary text-3xl my-10">
               Contact Us
               <div class="text-sm text-gray-400">Let us help you.</div>
@@ -184,6 +184,107 @@
               </div>
             </form>
           </div>
+
+          <!-- section with image background -->
+          <div class="bg-primary overflow-hidden h-80 relative">
+            <div class="absolute z-10 flex items-center h-full max-w-md mx-20">
+              <div>
+                <h2 class="text-4xl mb-3">Calling all creators</h2>
+                <p class="my-5 font-semibold">
+                  Get on Center Wave to connect with fans, share your sounds,
+                  and grow your audience.
+                </p>
+                <div class="flex items-center space-x-3 text-xl my-3">
+                  <span
+                    class="border rounded-full p-2 hover:bg-white hover:text-primary duration-300 transform"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15"
+                      />
+                    </svg>
+                  </span>
+                  <p>Upload Songs</p>
+                </div>
+                <div class="flex items-center space-x-3 text-xl my-3">
+                  <span
+                    class="border rounded-full p-2 hover:bg-white hover:text-primary duration-300 transform"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Check Stats</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="/img/creator.jpg"
+              class="object-cover h-full w-full opacity-30 absolute top-0"
+              alt=""
+            />
+          </div>
+
+          <!-- are you ready section -->
+          <div
+            class="bg-dark h-72 flex justify-center items-center text-gray-300"
+          >
+            <div class="mx-5 text-center">
+              <h2 class="text-4xl">Are you ready to rock the world?</h2>
+              <div class="mt-8 flex justify-center space-x-5 items-center">
+                <p class="uppercase text-lg">or</p>
+                <button
+                  class="text-lg border text-primary rounded border-primary px-6 py-1 font-semibold hover:bg-primary duration-150 transform hover:text-white"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <footer
+            class="bg-dark border-t border-gray-700 space-y-5 md:space-y-0 text-center md:flex md:justify-between p-5 text-gray-400 text-sm"
+          >
+            <div class="text-gray-300 text-base">
+              Copyright © {{ new Date().getFullYear() }} Center Wave.
+            </div>
+            <ul class="flex space-x-5 justify-center">
+              <li class="hover:text-gray-200 duration-150 transform">
+                <router-link to="">Blogs</router-link>
+              </li>
+              <li class="hover:text-gray-200 duration-150 transform">
+                <router-link to="">About us</router-link>
+              </li>
+              <li class="hover:text-gray-200 duration-150 transform">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </footer>
         </div>
       </div>
     </div>
