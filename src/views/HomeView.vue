@@ -9,6 +9,21 @@
         class="object-cover h-screen md:w-screen opacity-30 absolute top-0"
         alt=""
       />
+      <!-- bubbles -->
+      <ul
+        class="bubbles w-full flex items-center justify-around absolute bottom-0"
+      >
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <div class="w-full h-screen text-white absolute top-0">
         <!-- navbar -->
         <nav class="flex justify-between px-5 md:px-10 my-5">
@@ -57,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="relative bottom-0">
+        <div class="z-20 w-full">
           <svg
             version="1.1"
             id="Layer_1"
@@ -66,10 +81,8 @@
             x="0px"
             y="0px"
             viewBox="0 0 3510.8 349.9"
-            style="enable-background: new 0 0 3510.8 349.9"
-            xml:space="preserve"
+            class="myShadow"
           >
-            <title>waves</title>
             <path
               class="st0"
               d="M1538.6,349.9c-8.5-5.8-17-11.5-25.4-17.2c-201.1-134-443.1-203.1-683.1-195.3
