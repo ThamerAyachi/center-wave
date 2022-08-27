@@ -4,13 +4,17 @@ import MainLayout from "../layouts/MainLayout.vue";
 
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
+import BlogsView from "../views/BlogsView.vue";
 
 const routes = [
   {
     path: "/content",
     name: "MainLayout",
     component: MainLayout,
-    children: [{ path: "/about", name: "About", component: AboutView }],
+    children: [
+      { path: "/about", name: "About", component: AboutView },
+      { path: "/blogs", name: "Blogs", component: BlogsView },
+    ],
   },
   {
     path: "/",

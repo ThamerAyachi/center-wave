@@ -13,6 +13,7 @@
       :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
       class="fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-300 transform bg-dark lg:translate-x-0 lg:static lg:inset-0"
     >
+      <!-- logo -->
       <router-link
         :to="{ name: 'home' }"
         class="flex items-center justify-center mt-8"
@@ -36,38 +37,51 @@
         </div>
       </router-link>
 
-      <nav class="mt-10">
+      <nav class="mt-10 text-gray-400">
         <!-- links -->
-        <router-link
-          class="flex items-center px-6 py-2 mt-4 duration-200 hover:bg-darked text-gray-400 hover:text-white"
-          active-class="bg-darked text-white"
-          to="/dashboard"
-        >
-          <svg
-            class="w-5 h-5"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z"
-              fill="currentColor"
-            />
-            <path
-              d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z"
-              fill="currentColor"
-            />
-          </svg>
 
-          <span class="mx-4">Dashboard</span>
+        <!-- information -->
+        <h5 class="px-6 uppercase text-gray-500 font-semibold">Information</h5>
+        <router-link
+          v-for="(link, i) in information"
+          :key="i"
+          active-class="bg-darked text-white"
+          class="flex items-center px-6 py-2 mt-4 duration-200 hover:bg-darked hover:text-white"
+          :to="{ name: link.name }"
+        >
+          <span v-html="link.icon"></span>
+
+          <span class="mx-4">{{ link.text }}</span>
         </router-link>
+
+        <div class="border-t border-gray-700 mx-2 mt-10">
+          <div class="mx-2 text-gray-500 text-sm my-1 text-center">
+            Copyright © {{ new Date().getFullYear() }} Center Wave.
+          </div>
+        </div>
       </nav>
     </div>
   </div>
 </template>
 
-<script setup>
+<script>
 import { useSidebar } from "../../hooks/useSidebar";
+import icons from "../../assets/icons";
 
-const { isOpen } = useSidebar();
+export default {
+  data() {
+    return {
+      information: [
+        { icon: icons.userGroup, name: "About", text: "About Us" },
+        { icon: icons.blog, name: "Blogs", text: "Blogs" },
+      ],
+    };
+  },
+
+  setup() {
+    const { isOpen } = useSidebar();
+
+    return { isOpen };
+  },
+};
 </script>

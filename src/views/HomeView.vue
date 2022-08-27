@@ -288,7 +288,7 @@
             </div>
             <ul class="flex space-x-5 justify-center">
               <li class="hover:text-gray-200 duration-150 transform">
-                <router-link to="">Blogs</router-link>
+                <router-link :to="{ name: 'Blogs' }">Blogs</router-link>
               </li>
               <li class="hover:text-gray-200 duration-150 transform">
                 <router-link :to="{ name: 'About' }">About us</router-link>
