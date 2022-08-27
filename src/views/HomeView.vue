@@ -291,7 +291,7 @@
                 <router-link to="">Blogs</router-link>
               </li>
               <li class="hover:text-gray-200 duration-150 transform">
-                <router-link to="">About us</router-link>
+                <router-link :to="{ name: 'About' }">About us</router-link>
               </li>
               <li class="hover:text-gray-200 duration-150 transform">
                 <a href="#contact">Contact</a>

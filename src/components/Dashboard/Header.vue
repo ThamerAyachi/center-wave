@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <header class="flex items-center justify-between px-6 py-4 bg-dark">
+  <header
+    class="flex items-center justify-between px-6 py-4 bg-dark border border-darked"
+  >
     <div class="flex items-center">
       <button
         @click="isOpen = true"
