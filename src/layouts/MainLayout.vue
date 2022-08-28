@@ -9,7 +9,13 @@
         class="flex-1 overflow-x-hidden overflow-y-auto bg-darked text-gray-300"
       >
         <div class="container mx-auto px-6 py-8">
-          <router-view />
+          <transition
+            mode="out-in"
+            enter-active-class="animate__animated animate__fadeIn"
+            leave-active-class="animate__animated animate__fadeOut"
+          >
+            <router-view />
+          </transition>
         </div>
       </main>
     </div>
