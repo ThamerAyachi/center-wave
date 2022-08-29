@@ -66,3 +66,18 @@
 .bubbles li:nth-child(10) {
   animation-delay: 5s;
 }
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #171719;
+}
+::-webkit-scrollbar-thumb {
+  background: #222225;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #131314;
+}
