@@ -40,8 +40,24 @@
       <nav class="mt-10 text-gray-400">
         <!-- links -->
 
-        <!-- information -->
+        <!-- BROWSE MUSIC -->
         <h5 class="px-6 py-2 uppercase text-gray-500 font-semibold">
+          Browse music
+        </h5>
+        <router-link
+          v-for="(link, i) in browseMusic"
+          :key="i"
+          active-class="bg-white text-gray-800"
+          class="flex items-center px-6 py-2 mt-2 duration-200 hover:bg-white hover:text-gray-800 rounded-l-2xl"
+          :to="{ name: link.name }"
+        >
+          <span v-html="link.icon"></span>
+
+          <span class="mx-4">{{ link.text }}</span>
+        </router-link>
+
+        <!-- information -->
+        <h5 class="px-6 py-2 mt-5 uppercase text-gray-500 font-semibold">
           Information
         </h5>
         <router-link
@@ -77,6 +93,7 @@ export default {
         { icon: icons.userGroup, name: "About", text: "About Us" },
         { icon: icons.blog, name: "Blogs", text: "Blogs" },
       ],
+      browseMusic: [{ icon: icons.musicalNote, name: "Posts", text: "Posts" }],
     };
   },
 

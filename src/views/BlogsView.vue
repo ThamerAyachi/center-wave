@@ -2,7 +2,7 @@
   <div>
     <!-- title -->
     <h2
-      class="w-full flex justify-center items-center space-x-3 text-3xl text-primary font-bold mb-10"
+      class="w-full flex justify-center items-center space-x-3 text-3xl text-gray-300 font-bold mb-10"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

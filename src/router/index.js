@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout.vue";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import BlogsView from "../views/BlogsView.vue";
+import PostsView from "../views/PostsView.vue";
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
     children: [
       { path: "/about", name: "About", component: AboutView },
       { path: "/blogs", name: "Blogs", component: BlogsView },
+      { path: "/posts", name: "Posts", component: PostsView },
     ],
   },
   {
