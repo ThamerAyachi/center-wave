@@ -41,12 +41,14 @@
         <!-- links -->
 
         <!-- information -->
-        <h5 class="px-6 uppercase text-gray-500 font-semibold">Information</h5>
+        <h5 class="px-6 py-2 uppercase text-gray-500 font-semibold">
+          Information
+        </h5>
         <router-link
           v-for="(link, i) in information"
           :key="i"
-          active-class="bg-darked text-white"
-          class="flex items-center px-6 py-2 mt-4 duration-200 hover:bg-darked hover:text-white"
+          active-class="bg-white text-gray-800"
+          class="flex items-center px-6 py-2 mt-2 duration-200 hover:bg-white hover:text-gray-800 rounded-l-2xl"
           :to="{ name: link.name }"
         >
           <span v-html="link.icon"></span>
