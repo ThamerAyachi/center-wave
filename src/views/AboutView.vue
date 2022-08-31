@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h2 class="text-3xl font-semibold text-primary w-full text-center">
+    <h2 class="text-3xl font-bold text-gray-300 w-full text-center">
       About Us
     </h2>
     <div class="flex justify-center">
