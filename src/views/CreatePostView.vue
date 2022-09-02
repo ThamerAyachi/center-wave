@@ -15,6 +15,12 @@
           </button>
         </form>
 
+        <!-- for data not found -->
+        <div class="text-center w-full my-40 text-gray-500">
+          <p class="uppercase font-semibold text-3xl">Music not found</p>
+          <p class="mt-2">Search with music's name</p>
+        </div>
+
         <div class="my-10">
           <!-- music searched here -->
         </div>
