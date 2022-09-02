@@ -8,6 +8,7 @@
           <input
             type="search"
             class="p-2 bg-dark w-4/5 text-primary rounded-l-xl focus:outline-none border-dark focus:border-primary focus:ring focus:ring-opacity-20 focus:ring-primary"
+            placeholder="music search ..."
           />
           <button class="w-1/5 bg-dark text-primary rounded-r-xl">
             Search
