@@ -1,5 +1,7 @@
 <template>
-  <div>create post</div>
+  <div>
+    <div class="w-full text-center text-3xl font-semibold">New Post</div>
+  </div>
 </template>
 
 <script>
