@@ -95,7 +95,7 @@ export default {
       ],
       browseMusic: [
         { icon: icons.musicalNote, name: "Posts", text: "Posts" },
-        { icon: icons.musicalNote, name: "CreatePost", text: "Create Post" },
+        { icon: icons.musicalNote, name: "CreatePost", text: "New Post" },
       ],
     };
   },
