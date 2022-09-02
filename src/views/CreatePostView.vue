@@ -8,7 +8,7 @@
           <input
             type="search"
             class="p-2 bg-dark w-4/5 text-primary rounded-l-xl focus:outline-none border-dark focus:border-primary focus:ring focus:ring-opacity-20 focus:ring-primary"
-            placeholder="music search ..."
+            placeholder="Search for tracks"
           />
           <button class="w-1/5 bg-dark text-primary rounded-r-xl">
             Search
@@ -17,8 +17,8 @@
 
         <!-- for data not found -->
         <div class="text-center w-full my-40 text-gray-500">
-          <p class="uppercase font-semibold text-3xl">Music not found</p>
-          <p class="mt-2">Search with music's name</p>
+          <p class="uppercase font-semibold text-3xl">Track not found</p>
+          <p class="mt-2">Search with track's title</p>
         </div>
 
         <div class="my-10">
