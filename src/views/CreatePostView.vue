@@ -2,7 +2,7 @@
   <div>
     <div class="w-full text-center text-3xl font-semibold">New Post</div>
     <div class="flex justify-center">
-      <div class="my-10" style="max-width: 700px">
+      <div class="my-10 md:w-[700px] w-screen" style="max-width: 700px">
         <!-- search -->
         <form class="px-3 my-5 flex w-full">
           <input
@@ -13,6 +13,10 @@
             Search
           </button>
         </form>
+
+        <div class="my-10">
+          <!-- music searched here -->
+        </div>
       </div>
     </div>
   </div>
