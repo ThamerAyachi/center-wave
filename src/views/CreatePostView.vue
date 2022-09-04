@@ -7,7 +7,7 @@
         <form class="px-3 my-5 flex w-full" @submit.prevent="onSearch">
           <input
             type="text"
-            class="p-2 bg-dark w-4/5 text-primary rounded-l-xl focus:outline-none border-dark focus:border-primary focus:ring focus:ring-opacity-20 focus:ring-primary"
+            class="p-2 bg-dark w-4/5 text-gray-400 rounded-l-xl focus:outline-none border-dark focus:border-primary focus:ring focus:ring-opacity-20 focus:ring-primary"
             placeholder="Search for tracks"
             v-model="search"
           />
