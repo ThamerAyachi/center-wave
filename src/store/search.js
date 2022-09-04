@@ -6,10 +6,9 @@ const search = {
   actions: {
     searchMusic: async (t, data) => {
       try {
-        const res = await axios.get(
-          "https://shazam.p.rapidapi.com/search",
-          data
-        );
+        const res = await axios.get("https://shazam.p.rapidapi.com/search", {
+          term: data,
+        });
         return res;
       } catch (err) {
         return err;

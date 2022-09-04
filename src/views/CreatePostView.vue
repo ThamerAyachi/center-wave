@@ -38,8 +38,15 @@ export default {
     };
   },
   methods: {
-    onSearch() {
-      console.log(this.search);
+    async onSearch() {
+      // console.log(this.search);
+      try {
+        const res = await this.$store.dispatch("searchMusic", this.search);
+
+        console.log(res);
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };
