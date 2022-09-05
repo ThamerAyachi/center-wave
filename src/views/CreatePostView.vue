@@ -22,14 +22,38 @@
           <p class="mt-2">Search with track's title</p>
         </div>
 
-        <div class="my-10">
+        <div class="my-10 flex justify-center md:inline">
           <!-- music searched here -->
-          <img
-            v-for="(t, i) in tracks"
-            :key="i"
-            :src="t.data.albumOfTrack.coverArt.sources[0].url"
-            alt=""
-          />
+          <div
+            class="w-full mx-10 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-3"
+          >
+            <div
+              class="overflow-hidden rounded-md bg-dark"
+              :key="i"
+              v-for="(t, i) in tracks"
+            >
+              <div class="max-h-96 overflow-hidden">
+                <img
+                  :src="t.data.albumOfTrack.coverArt.sources[0].url"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <div class="p-3">
+                <p class="">
+                  <span class="font-semibold">Track name:</span>
+                  {{ t.data.name }}
+                </p>
+                <p class="">
+                  <span class="font-semibold">Artist:</span>
+                  <span v-for="(ar, i) in t.data.artists.items" :key="i">
+                    {{ " " + ar.profile.name }}
+                    {{ t.data.artists.items[i + 1] ? "," : "" }}
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -48,6 +72,7 @@ export default {
     async onSearch() {
       try {
         const res = await this.$store.dispatch("searchMusic", this.search);
+        // console.log(res.data.tracks.items[0].data);
         this.tracks = res.data.tracks.items;
         // console.log("image", t.data.albumOfTrack.coverArt.sources[0].url);
       } catch (err) {
