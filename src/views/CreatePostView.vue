@@ -17,13 +17,19 @@
         </form>
 
         <!-- for data not found -->
-        <div class="text-center w-full my-40 text-gray-500">
+        <div class="text-center w-full my-40 text-gray-500" v-if="!tracks[0]">
           <p class="uppercase font-semibold text-3xl">Track not found</p>
           <p class="mt-2">Search with track's title</p>
         </div>
 
         <div class="my-10">
           <!-- music searched here -->
+          <img
+            v-for="(t, i) in tracks"
+            :key="i"
+            :src="t.data.albumOfTrack.coverArt.sources[0].url"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -35,15 +41,15 @@ export default {
   data() {
     return {
       search: "",
+      tracks: [],
     };
   },
   methods: {
     async onSearch() {
-      // console.log(this.search);
       try {
         const res = await this.$store.dispatch("searchMusic", this.search);
-
-        console.log(res);
+        this.tracks = res.data.tracks.items;
+        // console.log("image", t.data.albumOfTrack.coverArt.sources[0].url);
       } catch (err) {
         console.log(err);
       }
