@@ -13,7 +13,7 @@ const search = {
             q: data,
             type: "multi",
             offset: "0",
-            limit: "10",
+            limit: "15",
             numberOfTopResults: "5",
           },
           headers: {

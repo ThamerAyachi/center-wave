@@ -27,6 +27,7 @@
           <div
             class="w-full mx-10 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-3"
           >
+            <!-- music card -->
             <div
               class="overflow-hidden rounded-md bg-dark"
               :key="i"
