@@ -45,7 +45,11 @@
                   {{ t.data.name }}
                 </p>
                 <p class="">
-                  <span class="font-semibold">Artist:</span>
+                  <span class="font-semibold"
+                    >Artist{{
+                      t.data.artists.items.length > 1 ? "s" : ""
+                    }}:</span
+                  >
                   <span v-for="(ar, i) in t.data.artists.items" :key="i">
                     {{ " " + ar.profile.name }}
                     {{ t.data.artists.items[i + 1] ? "," : "" }}
