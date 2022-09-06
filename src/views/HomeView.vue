@@ -368,7 +368,7 @@
 
               <!--Body-->
               <div class="mb-8 mt-6">
-                <div class="mb-8 text-gray-600 text-sm">
+                <div class="mb-8 text-gray-300 text-sm">
                   <div>
                     <input
                       type="text"
