@@ -374,11 +374,13 @@
                       type="email"
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
                       placeholder="Email address"
+                      v-model="formData.email"
                     />
                     <input
                       type="password"
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
                       placeholder="Password"
+                      v-model="formData.password"
                     />
 
                     <div class="flex justify-end">
