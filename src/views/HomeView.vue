@@ -373,10 +373,12 @@
                     <input
                       type="text"
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
+                      placeholder="Email address"
                     />
                     <input
                       type="password"
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
+                      placeholder="Password"
                     />
                   </div>
                 </div>
