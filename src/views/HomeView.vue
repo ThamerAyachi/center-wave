@@ -367,8 +367,8 @@
               </div>
 
               <!--Body-->
-              <div class="mb-8 mt-6">
-                <div class="mb-8 text-gray-300 text-sm">
+              <div class="mt-6">
+                <div class="text-gray-300 text-sm">
                   <form>
                     <input
                       type="text"
@@ -381,7 +381,13 @@
                       placeholder="Password"
                     />
 
-                    <button>Login</button>
+                    <div class="flex justify-end">
+                      <button
+                        class="bg-primary p-2 rounded text-darked font-semibold my-3 px-8"
+                      >
+                        Login
+                      </button>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -404,7 +410,7 @@ export default {
   },
   data() {
     return {
-      open: false,
+      open: true,
     };
   },
 };
