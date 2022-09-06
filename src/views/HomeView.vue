@@ -380,6 +380,8 @@
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
                       placeholder="Password"
                     />
+
+                    <button>Login</button>
                   </form>
                 </div>
               </div>
