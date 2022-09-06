@@ -383,16 +383,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--Footer-->
-              <div class="flex justify-end pt-2">
-                <button
-                  @click="open = false"
-                  class="p-3 px-6 py-3 mr-2 text-indigo-500 bg-transparent rounded-lg hover:bg-gray-100 hover:text-indigo-400 focus:outline-none"
-                >
-                  Close
-                </button>
-              </div>
             </div>
           </div>
         </div>
