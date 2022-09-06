@@ -371,7 +371,7 @@
                 <div class="text-gray-300 text-sm">
                   <form>
                     <input
-                      type="text"
+                      type="email"
                       class="bg-dark border border-dark my-2 text-sm rounded-lg focus:ring-primary focus:border-primary focus:outline-none block w-full p-2.5"
                       placeholder="Email address"
                     />
@@ -411,6 +411,10 @@ export default {
   data() {
     return {
       open: true,
+      formData: {
+        email: "",
+        password: "",
+      },
     };
   },
 };
