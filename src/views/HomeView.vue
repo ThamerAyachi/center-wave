@@ -273,6 +273,7 @@
                 <p class="uppercase text-lg">or</p>
                 <button
                   class="text-lg border text-primary rounded border-primary px-6 py-1 font-semibold hover:bg-primary duration-150 transform hover:text-white"
+                  @click="open = true"
                 >
                   Login
                 </button>
