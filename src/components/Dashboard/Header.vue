@@ -96,7 +96,12 @@
           </transition>
         </div>
         <div v-else>
-          <button class="text-gray-400 text-lg font-semibold">Login</button>
+          <button
+            class="text-gray-400 text-lg font-semibold"
+            @click="open = true"
+          >
+            Login
+          </button>
         </div>
       </div>
     </header>
@@ -207,7 +212,7 @@ export default {
   data() {
     return {
       isLogin: this.$store.state.token ? true : false,
-      open: true,
+      open: false,
       formData: {
         email: "",
         password: "",
