@@ -386,7 +386,7 @@
 
                     <div class="flex justify-end">
                       <button
-                        class="bg-primary p-2 rounded text-darked font-semibold my-3 px-8"
+                        class="bg-primary p-2 rounded text-gray-300 font-semibold my-3 px-8 hover:bg-purple-600"
                       >
                         Login
                       </button>
