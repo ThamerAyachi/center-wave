@@ -413,7 +413,7 @@ export default {
   },
   data() {
     return {
-      open: true,
+      open: false,
       formData: {
         email: "",
         password: "",
